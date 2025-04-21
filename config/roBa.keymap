@@ -60,10 +60,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC         &kp TAB        &kp UP         &kp LS(NUMBER_1)  &kp LS(SLASH)                      &kp MINUS            &kp PLUS   &kp LS(INTERNATIONAL_3)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)
-&kp TAB         &kp LEFT       &kp DOWN       &kp RIGHT         &kp MINUS      &trans      &trans  &kp SEMICOLON        &kp COLON  &kp AT_SIGN              &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp BACKSLASH  &kp LS(EQUAL)  &kp COMMA         &kp PERIOD     &trans      &trans  &kp INTERNATIONAL_3  &kp AT     &kp UNDER                &kp SLASH         &kp LEFT_SHIFT
-&trans          &trans         &trans         &trans            &trans         &trans      &trans  &kp DEL                                                                    &kp LCTRL
+&kp ESC         &kp TAB        &kp UP         &kp LS(NUMBER_1)  &kp LS(SLASH)                      &kp MINUS            &kp PLUS   &kp LS(INTERNATIONAL_3)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)
+&kp TAB         &kp LEFT       &kp DOWN       &kp RIGHT         &kp MINUS      &trans      &trans  &kp SEMICOLON        &kp COLON  &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp BACKSLASH  &kp LS(EQUAL)  &kp COMMA         &kp PERIOD     &trans      &trans  &kp INTERNATIONAL_3  &kp AT     &kp UNDER                &kp SLASH          &kp LEFT_SHIFT
+&trans          &trans         &trans         &trans            &trans         &trans      &trans  &kp DEL                                                                     &kp LCTRL
             >;
 
             sensor-bindings =
