@@ -5,6 +5,9 @@
 
 #include <dt-bindings/zmk/pointing.h>　
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #define MOUSE 4
 #define SCROLL 5
@@ -61,12 +64,22 @@
         };
     };
 
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Q>, <&kp GRAVE>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&td0             &kp W         &kp E         &kp R      &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F      &kp G           &kp LS(LG(S))      &kp C_VOL_UP       &kp H        &kp J  &kp K      &kp L    &mo 4
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B           &kp C_MUTE         &kp C_VOLUME_DOWN  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp LEFT_SHIFT  &lt 1 SPACE        &kp BACKSPACE      &lt 2 ENTER                             &kp DEL
